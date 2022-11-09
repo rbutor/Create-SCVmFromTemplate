@@ -60,4 +60,3 @@ Set-SCVirtualHardDiskConfiguration -VHDConfiguration $VHDConfiguration -PinSourc
 
 Update-SCVMConfiguration -VMConfiguration $virtualMachineConfiguration
 New-SCVirtualMachine -Name $VmName -VMConfiguration $virtualMachineConfiguration -Description "" -BlockDynamicOptimization $false -JobGroup "$CreVMJobGuid" -ReturnImmediately -StartAction "NeverAutoTurnOnVM" -StopAction "SaveVM"
-#TestPush
